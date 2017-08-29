@@ -19,8 +19,8 @@
     </tr>
 
     <tr th:each="cheese : ${cheeses}">
-        <td th:text="${cheese.key}"></td>
-        <td th:text="${cheese.value}"></td>
+        <td th:text="${cheese.name}"></td> <!--.name comes from the getter of the Cheese class under models thanks to thymeleaf-->
+        <td th:text="${cheese.description}"></td>
     </tr>
 
 </table>
